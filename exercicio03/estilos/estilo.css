@@ -1,0 +1,16 @@
+main li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+main li img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+main section.campo-observacoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
