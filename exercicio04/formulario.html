@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css">
+        <title>Cadastro</title>
+    </head>
+    <body>  
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="imagens/logo4.png" alt="logo" height="50px" width="50px">
+                    Livraria UStart
+                </div>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="exercicio_04.html">
+                                Ínicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categorias.html">
+                                Categorias
+                            </a>
+                        </li>
+                        <li>
+                            <a href="formulario.html">
+                                Cadastro Usuário
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div style="text-align: center;">
+            <h1>Faça seu cadastro</h1>
+            <p>Lembre-se de preencher todos os campos</p>
+        </div>
+
+        <form>
+
+            <fieldset>
+                <div>
+                    <label for="nome"><strong>Nome: </strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <br>
+                <div>
+                    <label for="salario"><strong>Salário: </strong></label>
+                    <input type="number" name="salario" id="salario" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email"><strong>Email: </strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="senha"><strong>Senha: </strong></label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                <br>
+                <div>
+                    <label for="nascimento"><strong>Data de nascimento: </strong></label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                </div>
+            </fieldset> 
+
+            <fieldset>
+                <div>
+                    <label><strong>Turno de trabalho: </strong></label>
+                    <label>
+                        <input type="radio" name="turno" value="manha" checked>Manhã
+                    </label>
+                    <label>
+                        <input type="radio" name="turno" value="tarde">Tarde
+                    </label>
+                    <label>
+                        <input type="radio" name="turno" value="noite">Noite
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="senioridade"><strong>Senioridade: </strong></label>
+                    <select id="senioridade" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="0">Estagiário</option>
+                        <option value="1">Júnior</option>
+                        <option value="2">Pleno</option>
+                        <option value="3">Sênior</option>
+                    </select>
+                </div>
+                <br>
+                <div id="check">
+                    <span><strong>Selecione as tecnologias que utiliza: </strong></span>
+                    <br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                    <br>
+                    <textarea rows="5" style="width: 500px" id="experiencia" name="experiencia"></textarea>
+                </div>
+            </fieldset>
+
+            <hr>
+
+            <button type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+    </body>
+</html>
